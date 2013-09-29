@@ -2,7 +2,9 @@
 require_once("../../Conexion/openconection.php");
 
 $cant_reg = 10; $num_pag = $pagina; 
-if (!$num_pag) { $comienzo = 0; $num_pag = 1; } 
+if (!$num_pag) { $comienzo = 0; $num_pag = 1; }   
+
+
 else { $comienzo = ($num_pag - 1) * $cant_reg; }
 
 $resultado = mysql_query("SELECT * FROM roles"); 
