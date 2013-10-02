@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<?php 
+<?php
 $modulo = "votacion";
 require_once("../menu.php");
-require_once("listasvotaciones.php")
+require_once("voto.php"); //Me trae los candidatos registrados para esa lista de votación Jhon Tovar 29/09/2013
 ?>
 <html class="html">
     <head>
@@ -31,23 +30,34 @@ require_once("listasvotaciones.php")
         <div class="rounded-corners clearfix" id="page"><!-- group -->
             <img class="grpelem" id="u142-4" src="../../img/u142-4.png" alt="Smart&#45;Soft" width="304" height="160"/><!-- rasterized frame -->
              <?php echo $menu?>
-            <div class="verticalspacer">
-            </div>
-          <table border='0' cellspacing='0' cellspadding='0' style='width: 70%'>
-            <tr>
-                <td colspan='5' align='center'><h1><strong>Lista de Votaciones</strong></h1></td>
-            </tr>
-            <tr>
-                <td align='center' class='inf'><strong>Nombre</strong></td>
-                <td align='center' class='inf'><strong>Fecha de Inicio</strong></td>
-                <td align='center' class='inf'><strong>Fecha de culminación</strong></td>
-                <td align='center' class='inf' colspan='2'><strong>Acciones</strong></td>
-            </tr>
-            <?php 
-             echo $registros;
-            ?>
-            <tr><td colspan='5'> <?php echo $pagant."     ".$pagsig ?></td></tr>
-        </table>
+            <div class="verticalspacer"></div>
+             <table border='0' cellspacing='0' cellspadding='0' style='width: 70%; height: 90%'> 
+                 <tr>
+                     <td align='center'>
+                         <h1><strong><?php echo $nombrelista ?></strong></h1>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td align='center'>
+                         <h1><strong><u>Candidatos</u></strong></h1>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td align='center'>
+                          <div class='candidatos'>
+                               <?php 
+                                   echo $candidatos
+                               ?>
+                          </div>                         
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <input type='button' value='Votar'/>&nbsp&nbsp&nbsp&nbsp<input type='button' value='Cancelar'/>
+                     </td>
+                 </tr>
+             </table>
         </div>
     </body>
 </html>
+

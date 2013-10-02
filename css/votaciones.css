@@ -3,9 +3,7 @@ root {
 }
 
 #votaciones{
-     background-image: url(../img/madera.jpg); 
-     background-repeat: no-repeat;
-     background-size: 100% 700px;
+    
      color:#fff;
      text-shadow: 0.2em 0.2em 0.3em black;
      font-family: Simply Complicated,Arial;
@@ -32,3 +30,5 @@ a:link {text-decoration:none; color: #99CC00;} /* Link no visitado*/
 a:visited {text-decoration:none; color:#99CC66} /*Link visitado*/
 a:active {text-decoration:none; color:#99FF00; background:#EEEEEE} /*Link activo*/
 a:hover {text-decoration:underline; color:#99FF00;} /*Mause sobre el link*/
+
+

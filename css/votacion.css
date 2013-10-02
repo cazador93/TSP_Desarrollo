@@ -211,10 +211,68 @@ body
 {
 	padding-top: 35px;
 	padding-bottom: 36px;
+        
 }
 
 #page .verticalspacer
 {
 	clear: both;
 }
+
+
+table{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+    border:2px dotted #7D9926;
+    font-family: Simply Complicated,Arial;
+    /*background-color: #7D9926;*/   
+}
+table tr .inf{
+   border-top:2px dotted #648500; 
+   font-size: 20px;
+   padding-bottom: 6px;
+   padding-top: 6px;
+   
+}
+table td{
+   text-align: center;
+}
+
+h1{
+    text-shadow: 0.2em 0.2em 0.2em #063;
+    color:#000;
+    font-family: Simply Complicated,Arial;
+    font-size: 30px;
+}
+
+table a:link {text-decoration:none; color: rgb(79, 143, 48);} /* Link no visitado*/
+table a:visited {text-decoration:none; color:rgb(127, 209, 166)} /*Link visitado*/
+table a:active {text-decoration:none; color:#99FF00; background:#EEE} /*Link activo*/
+table a:hover {text-decoration:underline; color:#000;} /*Mause sobre el link*/
+
+.candidatos
+{
+    margin: 0 auto;
+    height: 200px;
+    width: 50%;
+    border:2px dotted #648500;
+    margin-top: -100px;
+    overflow: scroll;
+    background: #7FD1A6;
+    
+}
+.optionpar,.optionimpar{
+    float: left;
+    height: 100px;
+    width: 49%;
+    text-align: center;
+    border: 1px solid #648500;
+}
+
+
+
 
